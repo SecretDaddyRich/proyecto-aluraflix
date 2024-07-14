@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Clip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">AluraFlix</h1>
+        <div class="top-right-controls">
+            <a href="index.html" id="home-btn" class="btn">Inicio</a>
+            <button id="add-genre-btn" class="btn">Agregar Género</button>
+            <button id="delete-genre-btn" class="btn">Eliminar Categoría</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form id="add-video-form" class="video-form">
+                <div class="form-group">
+                    <label for="video-name">Autor:</label>
+                    <input type="text" id="video-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="video-title">Título del clip:</label>
+                    <input type="text" id="video-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="video-description">Descripción breve:</label>
+                    <textarea id="video-description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="video-url">URL del clip:</label>
+                    <input type="text" id="video-url" required>
+                </div>
+                <div class="form-group">
+                    <label for="video-image-url">URL de la imagen del clip:</label>
+                    <input type="text" id="video-image-url" required>
+                </div>
+                <div class="form-group">
+                    <label for="video-category">Categoría:</label>
+                    <select id="video-category">
+                        <!-- Las categorías se cargarán dinámicamente -->
+                    </select>
+                </div>
+                <button type="submit" class="btn">Guardar Clip</button>
+                <button type="button" class="btn" id="clear-form-btn">Vaciar</button>
+            </form>
+            <div id="new-genre-container" class="form-group" style="display:none;">
+                <label for="new-genre">Nuevo Género:</label>
+                <input type="text" id="new-genre">
+                <button id="save-genre-btn" class="btn">Guardar Género</button>
+            </div>
+            <div id="delete-genre-container" class="form-group" style="display:none;">
+                <label for="delete-genre">Categoría a Eliminar:</label>
+                <select id="delete-genre">
+                    <!-- Las categorías se cargarán dinámicamente -->
+                </select>
+                <button id="confirm-delete-genre-btn" class="btn">Confirmar Eliminación</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 AluraFlix by Rich.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/conde.rich/" target="_blank">
+                <img src="imagenes/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/SecretDaddyRich" target="_blank">
+                <img src="imagenes/github-icon.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/hector-ricardo-romero-reza-4b3ab117a/" target="_blank">
+                <img src="imagenes/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+    <script src="add-video-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraFlix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">AluraFlix</h1>
+        <div class="top-right-controls">
+            <input type="text" id="search-video" placeholder="Buscar clip">
+            <a href="add-video.html" id="add-video-btn" class="btn">Agregar Clip</a>
+        </div>
+    </header>
+    <main>
+        <section id="video-categories">
+            
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Clip</h2>
+            <form id="edit-video-form">
+                <div class="form-group">
+                    <label for="edit-video-name">Autor:</label>
+                    <input type="text" id="edit-video-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-video-title">Título del clip:</label>
+                    <input type="text" id="edit-video-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-video-description">Descripción breve:</label>
+                    <textarea id="edit-video-description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="edit-video-url">URL del clip:</label>
+                    <input type="text" id="edit-video-url" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-video-image-url">URL de la imagen del clip:</label>
+                    <input type="text" id="edit-video-image-url" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-video-category">Categoría:</label>
+                    <select id="edit-video-category">
+                        <!-- Las categorías se cargarán dinámicamente -->
+                    </select>
+                </div>
+                <button type="submit" class="btn">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 AluraFlix by Rich</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.github.com" target="_blank">
+                <img src="imagenes/github-icon.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="imagenes/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
